@@ -6,6 +6,7 @@ public class Exception_Handling_1
     {
         try
         {
+
             int num1, num2,res;
         Console.WriteLine("Enter the num1");
         num1 = int.Parse(Console.ReadLine());
@@ -29,7 +30,7 @@ public class Exception_Handling_1
         }
         finally
         {
-            Console.WriteLine("done");
+            Console.WriteLine("Done");
         }
 
 
@@ -41,7 +42,7 @@ public class Exception_Handling_1
 /*
 using System;
 
-public class GFG
+public class Array_Exception
 {
 
     // Main Method
@@ -60,22 +61,24 @@ public class GFG
         
     }
 }
+
 */
 
 using System;
 
-public class GFG
+public class String_Exception
 {
 
-    // Main Method
+    
     public static void Main(String[] args)
     {
         string s = "Rahul";
+        Console.WriteLine(s);
         try
         {
-            // causing exception
+            
             for (int i = 0; i <= s.Length; i++)
-                Console.WriteLine(s[8]);
+                Console.WriteLine(s[7]);
         }
         catch (IndexOutOfRangeException)
         {
